@@ -72,11 +72,14 @@ is a ruby script for indexing (should end in '_index_script.rb')
 3. Check that DocManager has an appropriate data source and project spec for
 the indexing script. I've pre-created them in this case, but these are the
 things that need to match up-
+
        a. Check that the index_name field from the script matches the
        index_field of a project spec json in DocManager/dataspec_files/projects/
+       
        b. Check that the item_type field from the script matches the
        class_type field (under index_details) for a data source spec json in
        DocManager/dataspec_files/data_sources/
+       
        c. In that same data source spec, change the "prefix" field (under
        the field for the files attached) to be the path to the directory with
        the files. Some test data sets have the prefix set to files on a
