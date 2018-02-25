@@ -74,22 +74,22 @@ the indexing script. I've pre-created them in this case, but these are the
 things that need to match up-
 
        a. Check that the index_name field from the script matches the
-       index_field of a project spec json in DocManager/dataspec_files/projects/
+       index_name of a project spec json in DocManager/dataspec_files/projects/
        
        b. Check that the item_type field from the script matches the
-       class_type field (under index_details) for a data source spec json in
+       class_name field (under index_details) for a data source spec json in
        DocManager/dataspec_files/data_sources/
        
        c. In that same data source spec, change the "prefix" field (under
        the field for the files attached) to be the path to the directory with
        the files. Some test data sets have the prefix set to files on a
-       webserver, in which case this doesn't need to be changed. 
+       webserver, in which case this doesn't need to be changed.
 
 4. Start DocManager (following the instructions at
 https://github.com/TransparencyToolkit/DocManager) and LookingGlass (following
 the instructions at https://github.com/TransparencyToolkit/LookingGlass)
 
-Pay special attention that the PROJECT_INDEX env variable in
+Pay special attention that the `PROJECT_INDEX` env variable in
 LookingGlass/config/initializers/project_config.rb is set to be the index_name
 from the indexing script (same value as step #3 part a)! This determines what
 project LookingGlass shows, so if it is not correctly set it will show the
