@@ -45,9 +45,11 @@ already, for example).
 ### Raw Documents
 
 Upload them using the upload form or pass the path to the docs to the OCR
-server (manually via a script) or Harvester (via the interface). Not
-recommended until we have the upload form and OCR server fully working, unless
-you are working on getting these working.
+server (manually via a script) or Harvester (via the interface).
+
+This requires that LookingGlass and DocManager are running
+first. Specifically, step #4 in the JSON test dataset instructions should also
+be followed for testing with raw, un-OCRed documents.
 
 
 ### Text Data
