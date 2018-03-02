@@ -101,7 +101,8 @@ linked to correct mail
 - [ ] Support uploading of CSV and JSONs with homogenous fields
 - [ ] Generate data source spec from fields
 - [ ] Add a function for creating data source spec on DocManager- also good
-for the generation of specs in the project/account manager later on
+for the generation of specs in the project/account manager later on. Includes
+associating the spec with the project.
 
 ### Misc Changes
 - [ ] Improve PDF OCR performance- maybe look into additional OCR methods
