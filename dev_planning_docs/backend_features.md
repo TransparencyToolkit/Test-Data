@@ -50,6 +50,7 @@ specified field types (title, description, notes, categories, etc)
 - [ ] DocManager function to update text fields
 - [ ] LG should pass additions to category/array fields to DM
 - [ ] DM should append additions to category/array fields to the data
+- [ ] Document deletion
 
 ### Misc Changes
 
