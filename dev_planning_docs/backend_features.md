@@ -20,7 +20,7 @@ or changes required for those things should be added to this list.
 These are features needed to make dataspecs work more smoothly, particularly
 with Catalyst. It includes changes on both DocManager and Catalyst.
 
-- [ ] Change to use Postgres instead of Mongo
+- [x] Change to use Postgres instead of Mongo
 - [ ] Review and possibly refactor dataspec (source and project) storage. Ensure
 these persist between boots, and are only created using flat file JSONs due to
 convenience rather than necessity (because long term, they will be passed from
