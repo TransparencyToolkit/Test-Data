@@ -34,13 +34,13 @@ on LookingGlass, with people being able to add additional facets on the
 sidebar. When people choose to add a facet by running Catalyst, these are the
 types of input the UI needs to be able to accept/considerations for the UI-
 
-* Catalyst has many methods ("analyzers") that can be run to extract terms,
+* Catalyst has many methods ("annotators") that can be run to extract terms,
   entities, etc. There is a full list of those at
   https://github.com/TransparencyToolkit/Catalyst/blob/master/db/seeds.rb. The
-  input form needs to allow users to choose which analyzer to run.
+  input form needs to allow users to choose which annotator to run.
 
-* After the user chooses the analyzer, they sometimes need to input parameters
-  or settings. A form for each analyzer should be generated. These could be
+* After the user chooses the annotator, they sometimes need to input parameters
+  or settings. A form for each annotator should be generated. These could be
   dynamically generated based on the input parameters specified in the
   database, or manually generated templates.
 
