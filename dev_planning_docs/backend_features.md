@@ -25,7 +25,7 @@ with Catalyst. It includes changes on both DocManager and Catalyst.
 these persist between boots, and are only created using flat file JSONs due to
 convenience rather than necessity (because long term, they will be passed from
 the account/project manager).
-- [ ] Function to automatically add/remove fields from dataspecs. Ensure that
+- [x] Function to automatically add/remove fields from dataspecs. Ensure that
 this also adds/removes fields on existing data.
 - [ ] Change catalyst to use DocManager directly as backend (incl remove any
 leftover indexing code from LG)
@@ -36,6 +36,7 @@ leftover indexing code from LG)
 
 - [ ] Add authentication for Elastic and Postgres on DocManager
 - [ ] Add DateTime data type
+- [ ] Upgrade to Elastic 6/7 (update code to deal with lack of doc types)
 
 
 ## LookingGlass
