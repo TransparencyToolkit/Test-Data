@@ -27,7 +27,7 @@ convenience rather than necessity (because long term, they will be passed from
 the account/project manager).
 - [x] Function to automatically add/remove fields from dataspecs. Ensure that
 this also adds/removes fields on existing data.
-- [ ] Change catalyst to use DocManager directly as backend (incl remove any
+- [x] Change catalyst to use DocManager directly as backend (incl remove any
 leftover indexing code from LG)
 - [ ] Make Catalyst add fields to DocManager as needed for its output
 (including specifying the type of the field/adding that to the db!)
