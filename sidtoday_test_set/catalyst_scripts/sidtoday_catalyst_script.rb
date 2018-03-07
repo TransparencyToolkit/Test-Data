@@ -10,9 +10,9 @@ annotators_to_run = [ {
                        input_params: {
                          fields_to_check: ["doc_text", "description"],
                          type: "organization"},
-                       output_param_names:{
-                         catalyst_organizations: "agency"
-                       }},
+                       output_param_name: "Agency",
+                       output_param_icon: "agency"
+                      },
                       {
                         annotator_name: "TfidfKeywordAnnotator",
                         input_params: {
@@ -21,19 +21,16 @@ annotators_to_run = [ {
                           doc_type: "snowden_doc",
                           lower_bound: 0.6,
                           upper_bound: 1},
-                        output_param_names:{
-                          catalyst_tfidfkeyword: "catalyst_keywords"
-                        }},
+                        output_param_name: "Keywords"
+                      },
                      {
                        annotator_name: "TermlistAnnotator",
                        input_params: {
                          term_list: File.read("country_names.json"),
                          fields_to_check: ["doc_text", "title"],
-                         case_sensitive: false},
-                       output_param_names:{
-                         catalyst_termcategory: "catalyst_termcategory",
-                         catalyst_termlist: "countries_mentioned"
-                       }
+                         case_sensitive: false,
+                         list_or_category: "list"},
+                       output_param_name: "Countries Mentioned"
                      }
                      ]
 

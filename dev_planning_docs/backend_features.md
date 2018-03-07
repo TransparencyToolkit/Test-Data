@@ -29,7 +29,7 @@ the account/project manager).
 this also adds/removes fields on existing data.
 - [x] Change catalyst to use DocManager directly as backend (incl remove any
 leftover indexing code from LG)
-- [ ] Make Catalyst add fields to DocManager as needed for its output
+- [x] Make Catalyst add fields to DocManager as needed for its output
 (including specifying the type of the field/adding that to the db!)
 
 ### Misc Changes
