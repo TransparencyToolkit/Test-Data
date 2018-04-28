@@ -57,7 +57,7 @@ specified field types (title, description, notes, categories, etc)
 
 - [ ] Use project index param in URL to show correct project
 - [ ] Similar document suggestions
-- [ ] Debug issue with embedded Document Cloud docs
+- [x] Debug issue with embedded Document Cloud docs
 
 
 ## Upload Form
