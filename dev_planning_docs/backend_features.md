@@ -79,6 +79,7 @@ bmp, etc.
 - [ ] Add support (and views) for html files
 - [ ] Allow upload of other formats, but no OCR/download only. Differentiate
 binary from txt
+- [ ] Add OCR for office formats (doc, docx, ppt, pptx, xls, xlsx, etc)
 
 ### Compressed Files
 
@@ -108,7 +109,7 @@ associating the spec with the project.
 
 ### OCR Optimization
 - [ ] Clean up image- increase DPI, change contrast, etc. to improve image/PDF OCR
-- [ ] Add support for setting language of document on uplaod (and OCR packages)
+- [ ] Add support for setting language of document on upload (and OCR packages)
 - [ ] Consider other OCR methods
 
 
