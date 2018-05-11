@@ -73,7 +73,7 @@ Mostly, these features consist of adding support for various file
 types. Support means both OCR capability and ability to view on LookingGlass.
 
 ### Add More File Types
-- [ ] Add support for image file formats such as png, jpg/jpeg, tiff, gif,
+- [x] Add support for image file formats such as png, jpg/jpeg, tiff, gif,
 bmp, etc.
 - [ ] Add support for text files with and without .txt extension
 - [ ] Add support (and views) for html files
