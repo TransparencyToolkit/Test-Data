@@ -64,7 +64,7 @@ name for the dataset.
 13. Start Catalyst following the instructions in the Catalyst README.
 
 14. Run Catalyst by using an example script, such as by running:
-cd sidtoday_test_set/catalyst_scripts/
+cd test_sets/sidtoday_test_set/catalyst_scripts/
 ruby sidtoday_catalyst_script.rb
 (if, for example, you are using the sidtoday test dataset)
 
