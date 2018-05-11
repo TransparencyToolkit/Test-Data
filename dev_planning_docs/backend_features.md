@@ -106,8 +106,10 @@ linked to correct mail
 for the generation of specs in the project/account manager later on. Includes
 associating the spec with the project.
 
-### Misc Changes
-- [ ] Improve PDF OCR performance- maybe look into additional OCR methods
+### OCR Optimization
+- [ ] Clean up image- increase DPI, change contrast, etc. to improve image/PDF OCR
+- [ ] Add support for setting language of document on uplaod (and OCR packages)
+- [ ] Consider other OCR methods
 
 
 ## Catalyst
