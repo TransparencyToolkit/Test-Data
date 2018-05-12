@@ -108,8 +108,8 @@ for the generation of specs in the project/account manager later on. Includes
 associating the spec with the project.
 
 ### OCR Optimization
-- [ ] Clean up image- increase DPI, change contrast, etc. to improve image/PDF OCR
-- [ ] Add support for setting language of document on upload (and OCR packages)
+- [ ] Clean up image- increase DPI, change contrast, add more languages. to improve image/PDF OCR
+- [ ] Detect if other OCR methods should be used/if it failed (incl spellcheck+language detection)
 - [ ] Consider other OCR methods
 
 
