@@ -79,7 +79,7 @@ bmp, etc.
 - [x] Add support (and views) for html files
 - [x] Allow upload of other formats, but no OCR/download only. Differentiate
 binary from txt
-- [ ] Add OCR for office formats (doc, docx, ppt, pptx, xls, xlsx, etc)
+- [x] Add OCR for office formats (doc, docx, ppt, pptx, xls, xlsx, etc)
 
 ### Compressed Files
 
