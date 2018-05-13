@@ -1,0 +1,65 @@
+---
+:type: reusable
+:version: '9.6'
+:serial: '387391376'
+:expiry: '2015-06-12 23:59:59 UTC'
+:maintenance: '2016-06-07 23:59:59 UTC'
+:elite: false
+:agents:
+  :total: 5
+  :desktop: 5
+  :windows:
+  - true
+  - false
+  :osx:
+  - true
+  - false
+  :linux:
+  - false
+  - false
+  :mobile: 0
+  :android:
+  - false
+  - false
+  :ios:
+  - false
+  - false
+  :blackberry:
+  - false
+  - false
+  :winphone:
+  - false
+  - false
+  :symbian:
+  - false
+  - false
+:users: 10
+:shards: 1
+:collectors:
+  :collectors: 1
+  :anonymizers: 3
+:nia:
+- 0
+- false
+:exploits: true
+:gapi: 100
+:rmi:
+- false
+- false
+:alerting: true
+:ocr: true
+:profiling: true
+:intelligence: false
+:archive: 0
+:connectors: false
+:translation: false
+:hostname_sync: false
+:modify: false
+:deletion: false
+:check: GJyCtgKp
+:digest_enc: true
+:crc: $2a$10$nZx2cCbUUXwpQlfIzZ9kR.AlXWxyuU9Y1Xd6FfiuzIQk.EJ1e9Qpq
+:sha1: 97ffe02e4e8bf19823876347b93951f46613bd5c3c7173e9561b6560425874b8
+:digest: 149f1d28cbd0cb14a8e3dc15a1897854ab9f2e27
+:signature: d4e5879e17c0f580ee53e47cd4bcc3d942e3e1e0559f85223ee65e66e66723df
+:integrity: 918f923b513cbc0197df50ce40c1f829f14c1037488ec0fdefc99208ebda78aa67a10ed6e42d5726b759b1fa96a81b14

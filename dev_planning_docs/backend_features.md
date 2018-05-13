@@ -77,7 +77,7 @@ types. Support means both OCR capability and ability to view on LookingGlass.
 bmp, etc.
 - [x] Add support for text files with and without .txt extension
 - [x] Add support (and views) for html files
-- [ ] Allow upload of other formats, but no OCR/download only. Differentiate
+- [x] Allow upload of other formats, but no OCR/download only. Differentiate
 binary from txt
 - [ ] Add OCR for office formats (doc, docx, ppt, pptx, xls, xlsx, etc)
 
