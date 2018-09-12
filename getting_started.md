@@ -39,9 +39,9 @@ the document upload form.
 (https://github.com/TransparencyToolkit/OCRServer) on the OCR server. Follow
 the setup instructions in the repository and start the OCR server.
 
-9. Clone the UDP server (https://github.com/TransparencyToolkit/UDPServer) on
+9. Clone the index server (https://github.com/TransparencyToolkit/IndexServer) on
 the same server DocManager and LookingGlass are running on. Folow the setup
-instructions in the README and start the UDP server.
+instructions in the README and start the index server.
 
 10. Once everything is setup and running, go to
 http://localhost:9292/upload/archive_test/ArchiveTestDoc and upload
@@ -63,16 +63,8 @@ name for the dataset.
 
 13. Start Catalyst following the instructions in the Catalyst README.
 
-14. Run Catalyst by using an example script, such as by running:
-cd test_sets/sidtoday_test_set/catalyst_scripts/
-ruby sidtoday_catalyst_script.rb
-(if, for example, you are using the sidtoday test dataset)
+14. Run Catalyst by using an example script, such as by running any of the scripts here:
+https://github.com/TransparencyToolkit/catalyst_test_scripts/tree/master/datapolitics
+(requires loading datapolitics data first- https://github.com/TheWebFoundation/DataPolitics/tree/master/index)
 
 15. Wait a minute and then reload LookingGlass to check that it worked
-
-16. Now, you can customize this script to do more things, using any of the
-methods outlined at
-https://github.com/TransparencyToolkit/Catalyst/blob/master/db/seeds.rb. Please
-note that any fields Catalyst has in the output_param_names need to be
-specified in the DocManager data source spec for the data source and that some
-methods require lists of terms or other parameters as input.

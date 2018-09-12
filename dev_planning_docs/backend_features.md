@@ -87,10 +87,10 @@ untagged docs by using existing, user-added tags as training data
 ## Upload Form
 
 ### Update Inter-App Communication
-- [ ] Add send document API to upload server
-- [ ] Add receive/send document API to OCRServer
-- [ ] Replace UDP server with TCP server that indexes on DocManager
-- [ ] Change doc_integrity_check to verify signatures
+- [x] Add send document API to upload server
+- [x] Add receive/send document API to OCRServer
+- [x] Replace UDP server with TCP server that indexes on DocManager
+- [x] Change doc_integrity_check to verify signatures
 
 ### Multiple Document Uploads
 - [ ] Figure out how to handle multiple docs- probably dynamic form with "add
