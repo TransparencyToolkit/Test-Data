@@ -36,7 +36,7 @@ leftover indexing code from LG)
 
 - [ ] Add authentication for Elastic and Postgres on DocManager
 - [ ] Add DateTime data type
-- [ ] Upgrade to Elastic 6/7 (update code to deal with lack of doc types)
+- [ ] Update to elasticsearch 6/7
 
 
 ## LookingGlass
@@ -45,13 +45,21 @@ leftover indexing code from LG)
 This includes changes on both LG and DocManager to ensure content in a
 document can be edited on LG and show up on DM.
 
-- [ ] Ensure UI for editable fields can be turned on/off and shows up for
+- [x] Ensure UI for editable fields can be turned on/off and shows up for
 specified field types (title, description, notes, categories, etc)
-- [ ] LG should pass changes to text fields to DocManager
-- [ ] DocManager function to update text fields
+- [x] LG should pass changes to text fields to DocManager
+- [x] DocManager function to update text fields
 - [ ] LG should pass additions to category/array fields to DM
 - [ ] DM should append additions to category/array fields to the data
+- [ ] Make add new field to document API method accessible on LG (and document params)
+- [ ] Ensure refresh after edit is handled in reasonable way
+
+### Add/Delete Documents
 - [ ] Document deletion
+- [ ] Entity dataspecs (for manually added)- company, person, location, event, note
+- [ ] Automatically have entities available in spec and create entity button
+- [ ] Ensure entity creation forms save in Harvester
+- [ ] Link back to document upload form (ensure correct instance) button (for uploaded docs)
 
 ### Misc Changes
 
@@ -60,7 +68,29 @@ specified field types (title, description, notes, categories, etc)
 - [x] Debug issue with embedded Document Cloud docs
 
 
+## Catalyst
+
+### Integration with LookingGlass
+
+- [x] Clean up and test all Catalyst methods
+- [ ] Save Catalyst recipes and annotators in database
+- [ ] API methods to save, edit, delete, rerun filters
+- [ ] Make Catalyst API methods accessible to LG
+
+### Additional Features
+
+- [ ] Built-in extraction lists on Catalyst such as countries
+- [ ] Change the machine learning categorization method to infer tags on
+untagged docs by using existing, user-added tags as training data
+
+
 ## Upload Form
+
+### Update Inter-App Communication
+- [ ] Add send document API to upload server
+- [ ] Add receive/send document API to OCRServer
+- [ ] Replace UDP server with TCP server that indexes on DocManager
+- [ ] Change doc_integrity_check to verify signatures
 
 ### Multiple Document Uploads
 - [ ] Figure out how to handle multiple docs- probably dynamic form with "add
@@ -81,13 +111,19 @@ bmp, etc.
 binary from txt
 - [x] Add OCR for office formats (doc, docx, ppt, pptx, xls, xlsx, etc)
 
+### OCR Optimization
+
+- [ ] Add support for ABBYY (including setup instructions)
+- [ ] Flag on upload form to use ABBYY by default
+- [ ] Otherwise, run when other methods fail
+- [ ] Extract metadata for certain file types (optional)
+
 ### Compressed Files
 
 - [ ] Decompress compressed files such as zip, tar, etc. Should first make a
 list of compressed files, then write decompression functions.
 - [ ] Handle compressed files individually- set each title automatically based
 on name. But indicate archive they were contained in.
-- [ ] Figure out how to adapt document count for compressed formats
 
 ### Email
 
@@ -102,39 +138,5 @@ linked to correct mail
 ### Machine-Readable Formats
 
 - [ ] Support uploading of CSV and JSONs with homogenous fields
-- [ ] Generate data source spec from fields
-- [ ] Add a function for creating data source spec on DocManager- also good
-for the generation of specs in the project/account manager later on. Includes
-associating the spec with the project.
-
-### OCR Optimization
-- [ ] Clean up image- increase DPI, change contrast, add more languages. to improve image/PDF OCR
-- [ ] Detect if other OCR methods should be used/if it failed (incl spellcheck+language detection)
-- [ ] Consider other OCR methods
-
-
-## Catalyst
-
-### Integration with LookingGlass
-
-- [ ] Ensure Catalyst params specified in LG are sent to Catalyst, and that
-the appropriate methods are run in response
-- [ ] Test all Catalyst methods when connected to LookingGlass
-- [ ] Save Catalyst filters in DB to run on incoming documents
-- [ ] Allow edits and deletion of these methods saved in the DB. Rerun
-Catalyst after they are changed
-
-### Additional Features
-
-- [ ] Built-in extraction lists on Catalyst such as countries
-- [ ] Change the machine learning categorization method to infer tags on
-untagged docs by using existing, user-added tags as training data
-
-
-## UDP, Doc Count, Verification
-
-- [ ] Review UDP and doc count setup
-- [ ] Merge all UDP code into single server
-- [ ] Retransmit lost files somehow
-- [ ] Test in real conditions
-
+- [ ] Generate data source spec from fields (infer types)
+- [ ] Function to create whole data source (not just field) on DocManager and associate with project
