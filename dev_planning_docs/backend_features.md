@@ -49,17 +49,17 @@ document can be edited on LG and show up on DM.
 specified field types (title, description, notes, categories, etc)
 - [x] LG should pass changes to text fields to DocManager
 - [x] DocManager function to update text fields
-- [ ] LG should pass additions to category/array fields to DM
-- [ ] DM should append additions to category/array fields to the data
+- [x] LG should pass additions to category/array fields to DM
+- [x] DM should append additions to category/array fields to the data
 - [ ] Make add new field to document API method accessible on LG (and document params)
 - [ ] Ensure refresh after edit is handled in reasonable way
 
 ### Add/Delete Documents
 - [ ] Document deletion
-- [ ] Entity dataspecs (for manually added)- company, person, location, event, note
-- [ ] Automatically have entities available in spec and create entity button
-- [ ] Ensure entity creation forms save in Harvester
-- [ ] Link back to document upload form (ensure correct instance) button (for uploaded docs)
+- [x] Entity dataspecs (for manually added)- company, person, location, event, note
+- [x] Automatically have entities available in spec and create entity button
+- [x] Ensure entity creation forms save in Harvester
+- [x] Link back to document upload form (ensure correct instance) button (for uploaded docs)
 
 ### Misc Changes
 
@@ -73,15 +73,13 @@ specified field types (title, description, notes, categories, etc)
 ### Integration with LookingGlass
 
 - [x] Clean up and test all Catalyst methods
-- [ ] Save Catalyst recipes and annotators in database
-- [ ] API methods to save, edit, delete, rerun filters
-- [ ] Make Catalyst API methods accessible to LG
+- [x] Save Catalyst recipes and annotators in database
+- [x] API methods to save, edit, delete, rerun filters
+- [x] Make Catalyst API methods accessible to LG
 
 ### Additional Features
 
 - [ ] Built-in extraction lists on Catalyst such as countries
-- [ ] Change the machine learning categorization method to infer tags on
-untagged docs by using existing, user-added tags as training data
 
 
 ## Upload Form
@@ -93,9 +91,9 @@ untagged docs by using existing, user-added tags as training data
 - [x] Change doc_integrity_check to verify signatures
 
 ### Multiple Document Uploads
-- [ ] Figure out how to handle multiple docs- probably dynamic form with "add
+- [x] Figure out how to handle multiple docs- probably dynamic form with "add
 doc" and implement on upload form server
-- [ ] Modify backend of OCR server to handle batches of docs
+- [x] Modify backend of OCR server to handle batches of docs
 
 
 ## OCR Server
@@ -113,10 +111,10 @@ binary from txt
 
 ### OCR Optimization
 
-- [ ] Add support for ABBYY (including setup instructions)
+- [x] Add support for ABBYY (including setup instructions)
 - [ ] Flag on upload form to use ABBYY by default
-- [ ] Otherwise, run when other methods fail
-- [ ] Extract metadata for certain file types (optional)
+- [x] Otherwise, run when other methods fail
+- [x] Extract metadata for certain file types (optional)
 
 ### Compressed Files
 
