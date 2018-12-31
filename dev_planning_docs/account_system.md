@@ -18,8 +18,8 @@ These are the different entities saved in the account system. The fields and
 relations between these need to be determined and then they need to be create
 (models and DB migrations).
 
--[ ] User
--[ ] Project/Archive
+- [ ] User
+- [ ] Project/Archive
 
 ### Users
 
