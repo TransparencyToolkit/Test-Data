@@ -23,41 +23,41 @@ relations between these need to be determined and then they need to be create
 
 ### Users
 
--[ ] Registration form and save registered users
--[ ] Show user details page
--[ ] Edit user settings (form and save)
--[ ] Delete user (button and delete in DB)
--[ ] When a user is created, create a DM instance/index server and save with user
+- [ ] Registration form and save registered users
+- [ ] Show user details page
+- [ ] Edit user settings (form and save)
+- [ ] Delete user (button and delete in DB)
+- [ ] When a user is created, create a DM instance/index server and save with user
 
 ### Projects/Archives
 Everything about managing archives. The below assumes a shared DM setup, or
 one per account which is handled at the user stage.
 
--[ ] Create new archive form (with fields same as project config json) 
--[ ] When new archive is created, save settings in DM
--[ ] When archive is created, start upload form for archive
--[ ] When archive is created, start LG for archive (with appropriate env vars)
--[ ] List of all archives user has access to (API method and page)
--[ ] Archive show page with settings, links to upload form+LG for instance
--[ ] Update archive (form, save on DM, and restart instances)
--[ ] Delete archive (button, on DM, and shutdown instances)
+- [ ] Create new archive form (with fields same as project config json) 
+- [ ] When new archive is created, save settings in DM
+- [ ] When archive is created, start upload form for archive
+- [ ] When archive is created, start LG for archive (with appropriate env vars)
+- [ ] List of all archives user has access to (API method and page)
+- [ ] Archive show page with settings, links to upload form+LG for instance
+- [ ] Update archive (form, save on DM, and restart instances)
+- [ ] Delete archive (button, on DM, and shutdown instances)
 
 ### Archive/Project Permissions
 These allow adding multiple users with access to an archive and multiple
 administrators.
 
--[ ] Add/remove users with access to archive
--[ ] Ensure that only users on access list can access
--[ ] Add/remove administrators archive
--[ ] Ensure that only administrators can change settings/add users
+- [ ] Add/remove users with access to archive
+- [ ] Ensure that only users on access list can access
+- [ ] Add/remove administrators archive
+- [ ] Ensure that only administrators can change settings/add users
 
 ### Login System
 This should work both on the account system as well as across apps.
 
--[ ] Basic login system (just for account system)
--[ ] Ensure that login system works on upload form
--[ ] Ensure that login system works on LG
--[ ] Ensure that backend- Catalyst, index server, DM only update data for archive with valid login
+- [ ] Basic login system (just for account system)
+- [ ] Ensure that login system works on upload form
+- [ ] Ensure that login system works on LG
+- [ ] Ensure that backend- Catalyst, index server, DM only update data for archive with valid login
 
 
 
