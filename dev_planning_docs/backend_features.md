@@ -32,12 +32,6 @@ leftover indexing code from LG)
 - [x] Make Catalyst add fields to DocManager as needed for its output
 (including specifying the type of the field/adding that to the db!)
 
-### Misc Changes
-
-- [ ] Add authentication for Elastic and Postgres on DocManager
-- [ ] Add DateTime data type
-- [ ] Update to elasticsearch 6/7
-
 
 ## LookingGlass
 
@@ -52,7 +46,7 @@ specified field types (title, description, notes, categories, etc)
 - [x] LG should pass additions to category/array fields to DM
 - [x] DM should append additions to category/array fields to the data
 - [ ] Make add new field to document API method accessible on LG (and document params)
-- [ ] Ensure refresh after edit is handled in reasonable way
+- [ ] Ensure refresh after edit/save entity is handled in reasonable way
 
 ### Add/Delete Documents
 - [ ] Document deletion
@@ -60,12 +54,6 @@ specified field types (title, description, notes, categories, etc)
 - [x] Automatically have entities available in spec and create entity button
 - [x] Ensure entity creation forms save in Harvester
 - [x] Link back to document upload form (ensure correct instance) button (for uploaded docs)
-
-### Misc Changes
-
-- [ ] Use project index param in URL to show correct project
-- [ ] Similar document suggestions
-- [x] Debug issue with embedded Document Cloud docs
 
 
 ## Catalyst
@@ -112,7 +100,6 @@ binary from txt
 ### OCR Optimization
 
 - [x] Add support for ABBYY (including setup instructions)
-- [ ] Flag on upload form to use ABBYY by default
 - [x] Otherwise, run when other methods fail
 - [x] Extract metadata for certain file types (optional)
 
@@ -133,8 +120,3 @@ their own doc type format
 - [ ] Threaded views for email in LG and ensure attachments are indexed and
 linked to correct mail
 
-### Machine-Readable Formats
-
-- [ ] Support uploading of CSV and JSONs with homogenous fields
-- [ ] Generate data source spec from fields (infer types)
-- [ ] Function to create whole data source (not just field) on DocManager and associate with project

@@ -18,74 +18,89 @@ These are the different entities saved in the account system. The fields and
 relations between these need to be determined and then they need to be create
 (models and DB migrations).
 
-- [ ] User
-- [ ] Project/Archive
+- [x] User
+- [x] Project/Archive
 
-### Users
 
-- [ ] Registration form and save registered users
-- [ ] Show user details page
-- [ ] Edit user settings (form and save)
-- [ ] Delete user (button and delete in DB)
-- [ ] When a user is created, create a DM instance/index server and save with user
+### Basic Archive Creation
 
-### Projects/Archives
-Everything about managing archives. The below assumes a shared DM setup, or
-one per account which is handled at the user stage.
+- [x] Archive creation (form and save on account system)
+- [x] Archive show page
+- [x] Save archive settings on DocManager
+- [x] Archive index page
+- [x] Generate file with env var settings on create
 
-- [ ] Create new archive form (with fields same as project config json) 
-- [ ] When new archive is created, save settings in DM
-- [ ] When archive is created, start upload form for archive
-- [ ] When archive is created, start LG for archive (with appropriate env vars)
-- [ ] List of all archives user has access to (API method and page)
-- [ ] Archive show page with settings, links to upload form+LG for instance
-- [ ] Update archive (form, save on DM, and restart instances)
-- [ ] Delete archive (button, on DM, and shutdown instances)
 
-### Archive/Project Permissions
-These allow adding multiple users with access to an archive and multiple
-administrators.
+### Basic User Creation
 
-- [ ] Add/remove users with access to archive
-- [ ] Ensure that only users on access list can access
-- [ ] Add/remove administrators archive
-- [ ] Ensure that only administrators can change settings/add users
+- [x] Figure out authentication system plan
+- [x] Basic registration form/saving
+- [x] Login/logout and access control on account system
+- [x] Edit user settings (check permissions)
 
-### Login System
-This should work both on the account system as well as across apps.
 
-- [ ] Basic login system (just for account system)
-- [ ] Ensure that login system works on upload form
-- [ ] Ensure that login system works on LG
-- [ ] Ensure that backend- Catalyst, index server, DM only update data for archive with valid login
+### Archive Permissions
+
+- [x] On creation, user added to admin&access users
+- [x] Users only see archives in list if they have access
+- [x] Add user to access list option (only accessible for admins)
+
+
+### Archive Access Control
+
+- [x] Authentication works on upload form
+- [x] Authentication works on LookingGlass
+
+
+### Clean Up Communication Within Pipeline
+
+- [x] Remove encryption of files on upload form, OCR server
+- [x] OCR server only loads from flat files
+- [x] Integrate IndexServer with DocManager- upload script check for new
 
 
 
 ## 2. Instance Management
 
 This is the phase where the different instances of the software are setup to
-automatically start on servers as they will in production. This may mean
-copying a VM or it may mean automating install.
+be automatically created in VMs/containers and start/stop as they will in production.
 
-At this stage the following needs to be determined-
-* What runs on what server
-* When new instances are started
-* How new instances are created (copying a template vs. new install)
-* Config files set for each instance (and how all set automatically) vs. account system
-* Data passed from instance to instance
-* Finalization of authentication settings
+### Initial Containerization Setup
 
-For each of the following applications-
-* Upload form
-* OCR server (and related such as Tika): May be per-batch of docs
-* Index server
-* Elasticsearch
-* DocManager
-* LookingGlass
-* Catalyst (and related such as Stanford-NER)
+-[ ] Generate VM/container using env variables specified
+-[ ] Start all pipeline components automatically when VM/container starts
+-[ ] Start/stop scripts for VM/container
 
-This phase may also involve finishing the UI for the account system and making
-small changes there.
+
+### Integration of Container with ArchiveAdministrator
+
+-[ ] Create a new container when archive created
+-[ ] Ensure post to DocManager to create archive still works
+-[ ] Track last visit to archive
+-[ ] Stop archive container if not visited for a certain period of time
+-[ ] Start archive container on link click if not already started
+-[ ] Update URLs to archive components/preset URLs
+
+
+### Updates and Deletion
+
+-[ ] Deleting an archive also deletes archive container
+-[ ] Deleting a user also deletes archives (where they are admin)
+-[ ] Updating archive settings on ArchiveAdmin sends update to DM
+
+
+### Automate Starting/Stopping OCR server
+
+-[ ] Script to create OCR server VM
+-[ ] Start OCR server when documents received
+-[ ] Stop and destroy OCR server when it finishes processing
+
+
+### Cleaning Up
+
+-[ ] Refactor ArchiveAdministrator
+-[ ] ArchiveAdministrator UI
+-[ ] Review authentication system
 
 
 
