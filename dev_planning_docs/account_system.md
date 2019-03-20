@@ -67,40 +67,40 @@ be automatically created in VMs/containers and start/stop as they will in produc
 
 ### Initial Containerization Setup
 
--[ ] Generate VM/container using env variables specified
--[ ] Start all pipeline components automatically when VM/container starts
--[ ] Start/stop scripts for VM/container
+- [ ] Generate VM/container using env variables specified
+- [ ] Start all pipeline components automatically when VM/container starts
+- [ ] Start/stop scripts for VM/container
 
 
 ### Integration of Container with ArchiveAdministrator
 
--[ ] Create a new container when archive created
--[ ] Ensure post to DocManager to create archive still works
--[ ] Track last visit to archive
--[ ] Stop archive container if not visited for a certain period of time
--[ ] Start archive container on link click if not already started
--[ ] Update URLs to archive components/preset URLs
+- [ ] Create a new container when archive created
+- [ ] Ensure post to DocManager to create archive still works
+- [ ] Track last visit to archive
+- [ ] Stop archive container if not visited for a certain period of time
+- [ ] Start archive container on link click if not already started
+- [ ] Update URLs to archive components/preset URLs
 
 
 ### Updates and Deletion
 
--[ ] Deleting an archive also deletes archive container
--[ ] Deleting a user also deletes archives (where they are admin)
--[ ] Updating archive settings on ArchiveAdmin sends update to DM
+- [ ] Deleting an archive also deletes archive container
+- [ ] Deleting a user also deletes archives (where they are admin)
+- [ ] Updating archive settings on ArchiveAdmin sends update to DM
 
 
 ### Automate Starting/Stopping OCR server
 
--[ ] Script to create OCR server VM
--[ ] Start OCR server when documents received
--[ ] Stop and destroy OCR server when it finishes processing
+- [ ] Script to create OCR server VM
+- [ ] Start OCR server when documents received
+- [ ] Stop and destroy OCR server when it finishes processing
 
 
 ### Cleaning Up
 
--[ ] Refactor ArchiveAdministrator
--[ ] ArchiveAdministrator UI
--[ ] Review authentication system
+- [ ] Refactor ArchiveAdministrator
+- [ ] ArchiveAdministrator UI
+- [ ] Review authentication system
 
 
 
